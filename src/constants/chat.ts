@@ -20,24 +20,27 @@ Respond using Markdown.`;
 export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo',
   'gpt-3.5-turbo-16k',
+  'gpt-3.5-turbo-16k-openai'
   'gpt-4',
+  'gpt-4-0613'
   'gpt-4-32k',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
 ];
 
-export const defaultModel = 'gpt-3.5-turbo';
+export const defaultModel = 'gpt-3.5-turbo-16k-openai';
 
 export const modelMaxToken = {
   'gpt-3.5-turbo': 4096,
   'gpt-3.5-turbo-0301': 4096,
   'gpt-3.5-turbo-0613': 4096,
   'gpt-3.5-turbo-16k': 16384,
+  'gpr-3.5-turbo-16k-openai': 16384
   'gpt-3.5-turbo-16k-0613': 16384,
-  'gpt-4': 8192,
+  'gpt-4': 16384,
   'gpt-4-0314': 8192,
-  'gpt-4-0613': 8192,
+  'gpt-4-0613': 16384,
   'gpt-4-32k': 32768,
   'gpt-4-32k-0314': 32768,
   'gpt-4-32k-0613': 32768,
@@ -57,6 +60,10 @@ export const modelCost = {
     completion: { price: 0.002, unit: 1000 },
   },
   'gpt-3.5-turbo-16k': {
+    prompt: { price: 0.003, unit: 1000 },
+    completion: { price: 0.004, unit: 1000 },
+  },
+  'gpt-3.5-turbo-16k-openai': {
     prompt: { price: 0.003, unit: 1000 },
     completion: { price: 0.004, unit: 1000 },
   },
@@ -90,7 +97,7 @@ export const modelCost = {
   },
 };
 
-export const defaultUserMaxToken = 4000;
+export const defaultUserMaxToken = 16384;
 
 export const _defaultChatConfig: ConfigInterface = {
   model: defaultModel,
