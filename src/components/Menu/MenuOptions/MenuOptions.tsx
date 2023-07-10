@@ -2,7 +2,6 @@ import React from 'react';
 import useStore from '@store/store';
 
 import Me from './Me';
-import AboutMenu from '@components/AboutMenu';
 import ImportExportChat from '@components/ImportExportChat';
 import SettingsMenu from '@components/SettingsMenu';
 import CollapseOptions from './CollapseOptions';
