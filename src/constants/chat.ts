@@ -18,8 +18,8 @@ Carefully heed the user's instructions.
 Respond using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
-  'gpt-3.5-turbo',
-  'gpt-3.5-turbo-16k',
+  //'gpt-3.5-turbo',
+  //'gpt-3.5-turbo-16k',
   'gpt-3.5-turbo-16k-openai',
   'gpt-4',
   'gpt-4-0613',
