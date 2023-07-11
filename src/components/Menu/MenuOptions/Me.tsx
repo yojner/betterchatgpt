@@ -8,11 +8,11 @@ const Me = () => {
   return (
     <a
       className='flex py-2 px-2 items-center gap-3 rounded-md hover:bg-gray-500/10 transition-colors duration-200 text-white cursor-pointer text-sm'
-      href='https://t.me/reonjy'
+      href='https://ko-fi.com/reonjy'
       target='_blank'
     >
       <HeartIcon />
-      {t('Mod by Reonjy')}
+      {t('Buy me coffee!')}
     </a>
   );
 };
